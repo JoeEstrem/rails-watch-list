@@ -1,7 +1,13 @@
-<h1>Create A New List</h1>
+<div class="page-container">
 
-<%= simple_form_for @list do |f| %>
-  <%= f.input :name %>
-  <%= f.input :photo, as: :file %>
-  <%= f.submit 'Submit', class: 'btn btn-info mt-2' %>
-<% end %>
+  <div style= "display: flex; align-items: center;">
+  <h1>Create A New List</h1>
+  <%= link_to 'Go back', lists_path, class: "view-btn", style: "margin-left: 16px;"%>
+  </div>
+
+  <%= simple_form_for @list do |f| %>
+    <%= f.input :name %>
+    <%= f.input :photo, as: :file %>
+    <%= f.submit 'Submit', class: 'btn btn-info mt-2' %>
+  <% end %>
+</div>

@@ -1,5 +1,8 @@
 <div class="page-container">
+<div style= "display: flex; align-items: center;">
 <h1><%= @list.name %></h1>
+ <%= link_to 'Go back', lists_path, class: "view-btn", style: "margin-left: 16px;"%>
+</div>
 
  <% if @list.movies.any? %>
   <% @list.bookmarks.each do |bookmark| %>
