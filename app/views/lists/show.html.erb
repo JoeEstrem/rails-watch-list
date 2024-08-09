@@ -1,3 +1,4 @@
+<div class="page-container">
 <h1><%= @list.name %></h1>
 
  <% if @list.movies.any? %>
@@ -15,3 +16,4 @@
 <% end %>
 
 <%= link_to 'Add a bookmark', new_list_bookmark_path(@list) %>
+</div>
